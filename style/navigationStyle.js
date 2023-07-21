@@ -17,5 +17,4 @@ export const HeaderLeftText = styled.Text`
 export const GlobaScrolllView = styled.View`
     flex:1;
     background-color: #181a20;
-    
 `

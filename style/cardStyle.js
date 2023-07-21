@@ -1,7 +1,10 @@
 import { styled } from "styled-components/native";
 
-const CardText = styled.Text`
+export const CardWhiteText = styled.Text`
     color: white;
+`;
+export const CardBlackText = styled.Text`
+    color: black;
 `;
 export const CardFlatList = styled.FlatList`
 `;
@@ -22,13 +25,13 @@ export const CardTextView = styled.View`
     padding: 2px;
     padding-left: 20px;
 `;
-export const CardTitleText = styled(CardText)`
+export const CardTitleText = styled(CardWhiteText)`
     font-size: 20px;
     font-weight: 500;
 `;
-export const CardPriceText = styled(CardText)`
+export const CardPriceText = styled(CardWhiteText)`
     font-size: 16px;
 `;
-export const CardTimeText = styled(CardText)`
+export const CardTimeText = styled(CardWhiteText)`
     font-size: 12px;
 `;
