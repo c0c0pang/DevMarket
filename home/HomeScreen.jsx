@@ -1,6 +1,6 @@
 import { CardFlatList } from "../style/cardStyle";
 import { GlobaScrolllView } from "../style/navigationStyle";
-import { Item } from "./ProductCard";
+import { ProductCard } from "./ProductCard";
 import { DATA } from "./data";
 
 export const HomeScreen = () => {
@@ -8,7 +8,7 @@ export const HomeScreen = () => {
         <GlobaScrolllView>
             <CardFlatList
                 data={DATA}
-                renderItem={({ item }) => <Item title={item.title} image={item.img} price={item.price} />}
+                renderItem={({ item }) => <ProductCard props={item} />}
                 keyExtractor={item => item.id}
             />
         </GlobaScrolllView>
