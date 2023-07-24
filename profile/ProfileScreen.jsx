@@ -3,6 +3,10 @@ import { ProfileHeaderView, ProfileMiddleView, ProfileModifyButton, ProfileModif
 import { GlobaScrolllView } from '../style/navigationStyle';
 import { WithLocalSvg } from 'react-native-svg';
 import UserIcon from '../assets/UserImg.svg'
+import AddIcon from '../assets/AddIcon.svg'
+import { BlockChain } from '../home/data';
+import { BlockChainCard } from './BlockChainCard';
+import { CardChainFlatList, ChainAddButton } from '../style/chainCardStyle';
 export const ProfileScreen = () => {
     return (
         <GlobaScrolllView>
@@ -17,8 +21,16 @@ export const ProfileScreen = () => {
                             <ProfileModifyText>수정하기</ProfileModifyText>
                         </ProfileModifyButton>
                     </ProfileMiddleView>
+                    <CardChainFlatList
+                        data={BlockChain}
+                        renderItem={({ item }) => <BlockChainCard name={item.name} price={item.price} img={item.img} />}
+                        keyExtractor={item => item.id}
+                    />
                 </ProfileView>
             </SafeAreaView>
+            <ChainAddButton>
+                <WithLocalSvg asset={AddIcon} />
+            </ChainAddButton>
         </GlobaScrolllView >
     );
 }
