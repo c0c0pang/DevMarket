@@ -2,7 +2,7 @@ import { styled } from "styled-components/native";
 import { CardBlackText, CardWhiteText } from "./cardStyle";
 export const ProfileView = styled.View`
     display: flex;
-    padding: 30px;
+    padding: 25px;
     gap: 30px;
 `
 export const ProfileHeaderView = styled.View`

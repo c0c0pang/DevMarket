@@ -7,8 +7,9 @@ export const CardBlackText = styled.Text`
     color: black;
 `;
 export const CardFlatList = styled.FlatList`
+    border-radius: 10px;
 `;
-export const CardView = styled.View`
+export const CardView = styled.TouchableOpacity`
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -18,6 +19,8 @@ export const CardView = styled.View`
 `;
 export const CardImage = styled.Image`
     border-radius: 3px;
+    width: 120px;
+    height: 100px;
 `;
 export const CardTextView = styled.View`
     display: flex;
